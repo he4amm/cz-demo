@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.PersonalInfoCard {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  &__img {
+    width: 80px;
+    height: 80px;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 9px;
+    span {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.58;
+      letter-spacing: normal;
+      color: $font-main-color;
+    }
+  }
+}

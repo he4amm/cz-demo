@@ -1,0 +1,61 @@
+@import '../../variables';
+
+.EmailCard {
+  position: relative;
+  width: 100%;
+  max-width: 364px;
+  height: 44px;
+  border-radius: 22.5px;
+  background-color: $bg-sub-color;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s; /* Safari */
+  transition: all 0.3s;
+  &__text {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    border: 0px;
+    background: transparent;
+    padding: 15px 5px 15px 21px; 
+    width: 100%;
+    max-width: 364px;
+    box-sizing: border-box;
+    outline: 0px;
+    &::placeholder {
+      color: $font-sub-color;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border-radius: 16.5px;
+    background-color: $theme-main-color;
+    padding: 9px 14px;
+    border: 0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $font-white-color;
+    outline: 0px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+  }
+  &.active {
+    background-color: $bg-dark-color;
+    .EmailCard__text {
+      color: white;
+    }
+    .EmailCard__btn {
+      color: $theme-main-color;
+      background-color: $bg-main-color;
+    }
+  }
+}

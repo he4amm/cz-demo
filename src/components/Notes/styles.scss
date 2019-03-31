@@ -1,0 +1,84 @@
+@import '../../variables';
+
+.Notes {
+  &__card {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 21px 17px 0 rgba(0, 0, 0, 0.03);
+    border: solid 1px $border-main-color;
+    background-color: $bg-main-color;
+    &--head {
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $theme-main-color;
+      display: block;
+      padding-bottom: 10px;
+    }
+    &--text {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      color: #a3a4a5;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .Notes {
+    padding-left: 11px;
+    margin-top: 91px;
+    &__card {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -11px;
+        top: 25px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 11px solid $border-white-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .Notes {
+    margin-top: 21.4px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Notes {
+    padding-top: 11px;
+    &__card {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+        top: -11px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 11px solid $border-white-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Notes {
+    margin-top: 29px;
+  }
+}

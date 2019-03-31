@@ -1,0 +1,65 @@
+@import '../../variables';
+
+.AddressCard {
+  display: flex;
+  flex-direction: row;
+  &__img {
+    width: 127px;
+  }
+  &__details {
+    flex: 1;
+    &--item {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $font-main-color;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $border-sub-color;
+      &:not(:first-child) {
+        padding-top: 12px;
+      } 
+    }
+    &--btn {
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $font-white-color;
+      background-color: $theme-main-color;
+      border: 0px;
+      padding: 9px 14px;
+      border-radius: 16.5px;
+      margin-top: 13px;
+      outline: 0px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s; /* Safari */
+      transition: all 0.3s;
+      &:hover, &:active {
+        background-color: $bg-dark-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) {
+  .AddressCard {
+    &__details {
+      padding-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .AddressCard {
+    flex-direction: column;
+    &__img {
+      margin-bottom: 27px;
+    }
+  }
+}

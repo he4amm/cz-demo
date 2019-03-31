@@ -1,0 +1,39 @@
+@import '../../variables';
+
+.Tabs {
+  display: flex;
+  flex-direction: column;
+  &__head {
+    display: flex;
+    flex-direction: row;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: solid 1px $border-main-color;
+    background-color: $bg-sub-color;
+    margin-top: -1px;
+    &--title {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $font-sub-color;
+      padding: 12px 16px;
+      border-right: 1px solid $border-main-color;
+      cursor: pointer;
+      &.active {
+        color: $theme-main-color;
+      }
+    }
+  }
+  &__content {
+    &--container {
+      display: none;
+      padding-top: 20px;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.PersonalInfo {
+  display: flex;
+  flex-direction: column;
+  &__head {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $font-white-color;
+    background-color: $theme-main-color;
+    padding: 17px 16px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+}
